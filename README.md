@@ -148,3 +148,6 @@ This project first and foremost solves my own pain — ¥200 of token bills ever
 
 **Stars are not the goal — saving money is.**  
 (Of course, if it saves you money, a star would be nice 😊)
+
+**License**: MIT  
+**Author**: Carlow  
