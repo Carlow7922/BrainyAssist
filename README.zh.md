@@ -216,7 +216,7 @@ pip install fastapi uvicorn jinja2 python-multipart
 
 | API 类型                       | 核心配置项                                                                                                                 | 默认值 / 示例                      |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
-| **Llama.cpp 本地 API**         | API\_TYPE=local\_llama\_cppLOCAL\_API\_PORT=8100                                                                      | 端口默认 8100，需与 Llama.cpp 服务端口一致 |
+| **Llama.cpp 本地 API**         | BASE_URL=http://192.168.1.2:8000/v1                                                                      | 需与 Llama.cpp 服务端口一致 |
 | **第三方 API（如 DeepSeek / 豆包）** | API\_TYPE=third\_partyARTY\_ENDPOINT=[https://api.deepseek](https://api.deepseek).comTHIRD\_PARTY\_KEY=YOUR\_API\_KEY | 需填写对应平台的 endpoint 和密钥         |
 
 配置步骤：
@@ -242,7 +242,7 @@ python BrainyAssist/web/app.py
 
 \# 或通过 uvicorn 直接启动（更稳定）
 
-uvicorn BrainyAssist.web.app:app --host 0.0.0.0 --port 8000
+uvicorn BrainyAssist.web.app:app
 ```
 
 ### 4. 拓展功能：导入 MD 文档到向量库
